@@ -6,4 +6,9 @@ http://pixelbloom.com/notes/middleman
 
 *****
 
-To get started run `./script/bootstrap`, and then edit the details in `.env`
+### Getting Started
+1. `./script/bootstrap`
+2. update the details in `.env`
+
+### Deploying your Site
+1. `./script/deploy`
