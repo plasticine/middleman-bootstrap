@@ -1,6 +1,6 @@
-middleman-bootstrap
+# middleman-bootstrap
 
-*****
+### Wat?
 
 Use [Middleman](http://middlemanapp.com/) with great vigour!
 
