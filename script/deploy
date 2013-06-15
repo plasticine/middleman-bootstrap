@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Update the things!
+bundle --binstubs
+./node_modules/.bin/bower install
+
+# Build the static site and deploy
+./bin/middleman build --clean
+./bin/middleman invalidate

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= I18n.t(:page_title) %></title>
+
+    <%= favicon_tag "favicon.ico" %>
+    <%= stylesheet_link_tag "pixelbloom" %>
+
+    <%= yield_content(:head) %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

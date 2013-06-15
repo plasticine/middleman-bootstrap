@@ -1,20 +1,32 @@
-source :rubygems
+source 'http://rubygems.org'
+ruby '1.9.3'
 
-gem "middleman"
+# Middleman core stuff
+gem 'middleman'
+gem 'middleman-blog'
+gem 'middleman-livereload'
+gem 'middleman-syntax'
+gem 'middleman-minify-html'
 
-gem "middleman-livereload"
-gem "middleman-syntax"
-gem "middleman-minify-html"
+# Middleman s3 + cloudfront stuff
+gem 'middleman-s3_sync', :git => 'git://github.com/plasticine/middleman-s3_sync.git'
+gem 'middleman-s3_redirect'
+gem 'middleman-cloudfront'
 
-gem "sass"
-gem "middleman-bourbon"
-gem "middleman-neat"
+# Assets stuff for middleman
+gem 'middleman-imageoptim'
+gem 'middleman-bourbon'
+gem 'middleman-neat'
 
-gem "builder"
-gem "activesupport"
-gem "mime-types"
-gem "rack-contrib"
-gem "redcarpet"
-gem "tzinfo"
-gem "liquid"
-gem "liquid-blocks", "~> 0.2.0"
+gem 'dotenv'
+gem 'activesupport'
+gem 'redcarpet'
+gem 'typogruby'
+gem 'tzinfo'
+
+# Testing stuff
+gem 'rspec'
+gem 'turnip'
+gem 'shoulda-matchers'
+gem 'capybara'
+gem 'selenium-webdriver'

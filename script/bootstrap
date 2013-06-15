@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Install things
+bundle --binstubs
+npm install
+./node_modules/.bin/bower install
+
+# Copy config files
+cp -n .example.env .env
+cp -n .example.config.yml config.yml
