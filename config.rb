@@ -75,9 +75,9 @@ configure :build do
 
   set :asset_host, config.cdn_url
 
-  activate :image_optim do |image_optim|
-    image_optim.image_extensions = ['*.png', '*.jpg', '*.gif']
-  end
+  # activate :image_optim do |image_optim|
+  #   image_optim.image_extensions = ['*.png', '*.jpg', '*.gif']
+  # end
 
   # Configure S3 sync
   activate :s3_sync do |s3_sync|
